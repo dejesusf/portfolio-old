@@ -1,6 +1,116 @@
-* {
-    margin: 0;
-    padding 0;
-    box-sizing: border-box;
+:root {
+    --background: #778da9;
+    --main: #415a77;
+    --hover: #e0e1dd;
+    --headings: #1b263b;
+    --section: #778da9;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 250%;
+    letter-spacing: -3px;
+    color: var(--headings);
+}
+
+h2 {
+    letter-spacing: -2px;
+}
+
+h3 {
+    letter-spacing: -1.25px;
+}
+
+header {
+    min-height: 10vh;
+    background-color: var(--background);
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+main {
+    min-height: 80vh;
+    background-color: var(--main);
+    padding: 10px;
+}
+
+footer {
+    min-height: 10vh;
+    padding: 3vh;
+    background-color: var(--background);
+    color: var(--headings);
+    text-align: center;
+}
+
+.navbar {
+    background-color: var(--background);
+    text-align: right;
+    font-weight: bold;
+    padding: 0px 10px 10px 10px;
+    color: #2830;
+}
+
+a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: var(--headings);
+}
+
+a:hover {
+    color: var(--hover);
+    cursor: crosshair;
+}
+
+section {
+    background: var(--section);
+    padding: 10px;
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me {
+    height: 400px;
+    width: auto;
+    display: flex;
+    flex: 1 1 400px;
+}
+
+img {
+    border: 2px solid black;
+}
+
+.align {
+    padding-left: 75px;
+    position: relative;
+}
+
+#portrait {
+    height: 180px;
+    width: 270.72px;
+}
+
+.description {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    text-align: justify;
+}
+
+@media screen and (max-width: 992px) { section {
+    width: 45%;
+} }
+
+@media screen and (max-width:576px) { section {
+    width: 97%;
+}}
