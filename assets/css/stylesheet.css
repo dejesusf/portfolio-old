@@ -13,6 +13,10 @@
     font-family: Helvetica, sans-serif;
 }
 
+p {
+    font-size: 14px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -79,11 +83,17 @@ section {
     flex-direction: row;
 }
 
-.about-me {
-    height: 400px;
+.about-me, .contact, .portfolio {
+    height: auto;
     width: auto;
     display: flex;
-    flex: 1 1 400px;
+    flex: 1;
+}
+
+.sidehead {
+    position: relative;
+    display: flex;
+    flex: 0 0 200px;
 }
 
 img {
@@ -91,21 +101,35 @@ img {
 }
 
 .align {
-    padding-left: 75px;
+    padding: 0 10px;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-pic {
+    padding: 0 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #portrait {
     height: 180px;
-    width: 270.72px;
+    width: auto;
+    margin: 0 10px;
 }
 
 .description {
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
+    padding: 10px 0;
+    /* position: relative; */
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    
 }
+
 
 @media screen and (max-width: 992px) { section {
     width: 45%;
