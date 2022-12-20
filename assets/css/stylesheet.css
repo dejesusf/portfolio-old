@@ -11,11 +11,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
-}
-
-p {
     font-size: 14px;
 }
+
+/* p {
+    font-size: 14px;
+} */
 
 html {
     scroll-behavior: smooth;
@@ -28,10 +29,12 @@ h1 {
 }
 
 h2 {
+    font-size: 175%;
     letter-spacing: -2px;
 }
 
 h3 {
+    font-size: 135%;
     letter-spacing: -1.25px;
 }
 
@@ -83,7 +86,7 @@ section {
     flex-direction: row;
 }
 
-.about-me, .contact, .portfolio {
+.about-me, .contact, .portfolio, .resume {
     height: auto;
     width: auto;
     display: flex;
@@ -97,7 +100,7 @@ section {
 }
 
 img {
-    border: 2px solid black;
+    border: 3px solid var(--headings);
 }
 
 .align {
@@ -121,20 +124,64 @@ img {
     margin: 0 10px;
 }
 
-.description {
+#description {
     padding: 10px 0;
-    /* position: relative; */
+    position: relative;
     text-align: justify;
     display: flex;
     flex-direction: column;
+}
+
+.align ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.figure {
+    display: flex block;
+    flex: 1 2 10vh;
+}
+
+#large {
+    /* flex-wrap: wrap; */
+    height: auto;
+    width: 80vh;
     
 }
 
+#top-left {
+    position: absolute;
+    height: 25vh;
+    width: 30vh;
+}
+
+#top-right {
+    position: absolute;
+    right:40px;
+    height: 25vh;
+    width: 30vh;
+}
+
+#bottom-left {
+    position: absolute;
+    right: 289px;
+    bottom: -179px;
+    height: 25vh;
+    width: 30vh;
+}
+
+#bottom-right {
+    position: absolute;
+    right:41px;
+    bottom: -179px;
+    height: 25vh;
+    width: 30vh;
+}
 
 @media screen and (max-width: 992px) { section {
     width: 45%;
 } }
 
-@media screen and (max-width:576px) { section {
+@media screen and (min-width:600px) { section {
     width: 97%;
 }}
