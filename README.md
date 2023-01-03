@@ -12,4 +12,4 @@ Here are screenshots of my website's layout.
 ![screenshot one of my portfolio](./assets/images/Screen%20Shot%202022-12-20%20at%208.19.53%20PM.png)
 
 ## Link
-Here is the [link](dejesusf.github.io/portfolio) to my online Portfolio.
+Here is the [link](https://dejesusf.github.io/portfolio) to my online Portfolio.

@@ -89,7 +89,7 @@ article {
     flex-direction: column;
 }
 
-.about-me, .contact, .portfolio, .resume {
+#about-me, #contact, #portfolio, #resume {
     height: auto;
     width: auto;
     display: flex;
